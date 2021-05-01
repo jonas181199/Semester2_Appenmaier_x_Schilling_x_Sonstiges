@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.DropdownButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="supermarket" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Appenmeier.Supermarkt.Controller">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Willkommen im Supermarkt" />
+      <Label layoutX="220.0" layoutY="171.0" text="Auswahl des Supermarrkts" />
+      <DropdownButton layoutX="185.0" layoutY="9.0">
+          <items>
+              <MenuItem fx:id="supermarket1" text="Choice 1" />
+              <MenuItem fx:id="supermarket2" text="Choice 2" />
+              <MenuItem fx:id="supermarket3" text="Choice 3" />
+          </items>
+      </DropdownButton>
+   </children>
+</AnchorPane>
