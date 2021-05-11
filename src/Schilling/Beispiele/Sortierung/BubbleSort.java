@@ -9,11 +9,12 @@ public class BubbleSort {
         for(int i = 0; i < n - 1; i++){
             //Innere Schleife für die paarweisen Vergleiche pro Durchlauf
             for(int k = 0; k < n - i - 1; k++){
+                //k: linker Index der Gabel & k+1: rechter Index der Gabel
                 if(array[k] > array[k + 1]){
                     //Swap elements
-                    temp = array[k];
-                    array[k] = array[k + 1];
-                    array[k + 1]= temp;
+                    temp = array[k]; //in Zwischenvariable
+                    array[k] = array[k + 1]; //überführen
+                    array[k + 1]= temp; //rechten Wert belegen
                 }
             }
         }

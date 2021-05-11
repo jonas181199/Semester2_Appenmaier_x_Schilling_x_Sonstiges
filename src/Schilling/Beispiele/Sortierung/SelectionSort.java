@@ -9,6 +9,7 @@ public class SelectionSort {
             //Innere Schleife identifiziert das kleinste ELem im unsortierten Bereich
             for(int k = i+1; k< unsortedArray.length;k++){
                 if(unsortedArray[i] > unsortedArray[k]){
+                    //kleinster Wert abspeichern
                     temp = unsortedArray[i];
                     unsortedArray[i] = unsortedArray[k];
                     unsortedArray [k] = temp;

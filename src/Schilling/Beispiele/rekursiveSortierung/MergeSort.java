@@ -6,6 +6,7 @@ public class MergeSort {
         int i, j, k, mitte;
         int[] tmp = new int [unsortiert.length];
         //Wenn mehr als ein Element eingrenzt
+        //divide & conquer
         if (rechteGrenze>linkeGrenze){
             mitte = (linkeGrenze + rechteGrenze)/2;
             mergeSort(unsortiert, linkeGrenze, mitte);
@@ -22,7 +23,9 @@ public class MergeSort {
             i = linkeGrenze;
             j = rechteGrenze;
             for(k=linkeGrenze; k <= rechteGrenze; k++){
+                //Ist i kleiner als j?
                 if(tmp[i] < tmp[j]){
+                    //Schreibrt an Stelle k des unsortierten Bereich i und erhöht dann
                     unsortiert[k] = tmp[i++];
                 }else {
                     unsortiert[k]=tmp[j--];

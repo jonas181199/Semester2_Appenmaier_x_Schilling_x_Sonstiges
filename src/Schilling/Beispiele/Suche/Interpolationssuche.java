@@ -26,8 +26,6 @@ public class Interpolationssuche {
         }
         //Wenn Element nicht gefunden werden konnte
         return -1;
-
-
     }
 }
 

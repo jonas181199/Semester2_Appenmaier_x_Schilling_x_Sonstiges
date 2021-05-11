@@ -9,6 +9,9 @@ public class InsertionSort {
             temp = unsortedArray[i];
             int k = i;
             //Innere Schleife identifiziert die korrekte Pos im sortierten Bereich
+            //Wenn gleich dann in while Schleife
+            //bricht ab sobald links kleiner als rechts
+            //Karte an Pos bringen
             while (k > 0 && unsortedArray[k-1] > temp){
                 unsortedArray[k] = unsortedArray[k - 1];
                 k--;
@@ -16,7 +19,5 @@ public class InsertionSort {
             unsortedArray[k] = temp;
         }
         return unsortedArray;
-
     }
-
 }

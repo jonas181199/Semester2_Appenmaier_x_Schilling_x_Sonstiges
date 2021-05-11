@@ -5,6 +5,17 @@ import java.util.Scanner;
 public class HelloWorld {
 
     public static void main (String[] args){
+
+        /*if (TIME >= TimeTable.getOpeningHours(DAY) && TIME <= TimeTable.getClosingHours(DAY)){
+            System.out.println(getNameOfDay(DAY) + ", " + TIME + ": geöffnet");
+        }
+        else if (TIME <= TimeTable.getOpeningHours(DAY) && TIME <= TimeTable.getClosingHours(DAY+1)){
+            System.out.println(getNameOfDay(DAY) + ", " + TIME + ": geöffnet");
+        } else {
+            System.out.println(getNameOfDay(DAY) + ", " + TIME + ": geschlossen");
+        }*/
+
+
         int x;
         Scanner scan = new Scanner(System.in);
         System.out.println("Gebe eine Zahle ein");

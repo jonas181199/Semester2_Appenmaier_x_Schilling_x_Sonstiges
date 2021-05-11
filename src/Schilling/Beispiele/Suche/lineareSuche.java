@@ -11,7 +11,6 @@ public class lineareSuche{
             //Breche Suche ab, wenn aktueller Wert größer als Suche ist
             if(sortedArray[i] > searchnum){
                 return -1;
-
             }
         }
         //Wenn das Element nicht gefunden wurde gebe -1 zurück
